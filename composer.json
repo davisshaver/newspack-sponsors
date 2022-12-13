@@ -1,5 +1,5 @@
 {
-  "name": "automattic/newspack-new-plugin-boilerplate",
+  "name": "automattic/newspack-sponsors",
   "description": "A new thing.",
   "type": "wordpress-plugin",
   "require": {
