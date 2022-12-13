@@ -20,8 +20,12 @@ if ( ! defined( 'NEWSPACK_SPONSORS_PLUGIN_FILE' ) ) {
 	define( 'NEWSPACK_SPONSORS_URL', plugin_dir_url( __FILE__ ) );
 }
 
+if ( ! defined( 'NEWSPACK_COMPOSER_ABSPATH' ) ) {
+	define( 'NEWSPACK_COMPOSER_ABSPATH', NEWSPACK_SPONSORS_PLUGIN_FILE . '/vendor/' );
+}
+
 // Include plugin resources.
-require_once NEWSPACK_SPONSORS_PLUGIN_FILE . '/vendor/autoload.php';
+require_once NEWSPACK_COMPOSER_ABSPATH . 'autoload.php';
 require_once NEWSPACK_SPONSORS_PLUGIN_FILE . '/includes/class-core.php';
 require_once NEWSPACK_SPONSORS_PLUGIN_FILE . '/includes/class-settings.php';
 require_once NEWSPACK_SPONSORS_PLUGIN_FILE . '/includes/class-editor.php';
